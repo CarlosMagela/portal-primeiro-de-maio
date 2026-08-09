@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2eea2e21-d82a-472e-9d80-ccd4308ef289" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/portal_primeiro_de_maio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clube/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/historia.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/escdo3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/escudo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/fotohistorica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/fotoinicio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/historia.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/historia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/pingo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/taca.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/time.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/tio-giba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/conquistas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contato.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/galeria.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/galeria_detalhe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hall_fama.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/historia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/home/noticias_home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/noticias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patrocinadores.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socio_torcedor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/templates/noticia_detalhe.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3HQKh71KGROFChbG5qRbKaPzrU3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADM/PycharmProjects_teste/portal_primeiro_de_maio/static/img&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\static\img" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\static\css" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\static\css\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\templates" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\templates\templates" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\templates\includes" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\static" />
+      <recent name="C:\Users\ADM\PycharmProjects_teste\portal_primeiro_de_maio\static\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="portal_primeiro_de_maio" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eea2e21-d82a-472e-9d80-ccd4308ef289" name="Changes" comment="" />
+      <created>1785794969369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785794969369</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

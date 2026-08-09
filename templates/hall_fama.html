@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Hall da Fama | A.D. Primeiro de Maio
+{% endblock %}
+
+{% block conteudo %}
+
+<!-- ==========================================================
+     TOPO
+========================================================== -->
+
+<section class="pagina-topo">
+    <div class="container">
+
+        <h1>HALL DA FAMA</h1>
+
+        <p>
+            Os personagens que marcaram a história da
+            Associação Desportiva Primeiro de Maio.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ==========================================================
+     DESTAQUE — TIO GIBA
+========================================================== -->
+
+<section class="hall-destaque">
+
+    <div class="container">
+
+        <div class="hall-destaque-grid">
+
+            <div class="hall-destaque-imagem">
+
+                <img
+                    src="{% static 'img/tio-giba.png' %}"
+                    alt="Gilberto Andrade - Tio Giba"
+                >
+
+            </div>
+
+
+            <div class="hall-destaque-texto">
+
+                <span class="hall-label">
+                    PRIMEIRO HOMENAGEADO
+                </span>
+
+                <h2>
+                    Gilberto Andrade
+                </h2>
+
+                <h3>
+                    “Tio Giba”
+                </h3>
+
+                <div class="hall-linha"></div>
+
+                <p class="hall-chamada">
+                    O eterno camisa 10 do Primeiro de Maio.
+                </p>
+
+                <p>
+                    Nascido em <strong>8 de março de 1946</strong>,
+                    um ano antes da fundação da Associação Desportiva
+                    Primeiro de Maio, Gilberto Andrade dedicou grande
+                    parte de sua vida ao clube.
+                </p>
+
+                <p>
+                    Conhecido carinhosamente como <strong>Tio Giba</strong>,
+                    foi um camisa 10 clássico, habilidoso e técnico,
+                    lembrado por sua qualidade com a bola nos pés.
+                </p>
+
+                <p>
+                    Para muitos torcedores e pessoas que conheceram
+                    sua trajetória, Tio Giba é considerado
+                    <strong>um dos maiores jogadores da história do Maio</strong>.
+                </p>
+
+                <p>
+                    Também defendeu as cores do
+                    <strong>São Paulo Futebol Clube nas categorias de base</strong>.
+                </p>
+
+                <div class="hall-dados">
+
+                    <div>
+                        <strong>08/03/1946</strong>
+                        <span>Nascimento</span>
+                    </div>
+
+                    <div>
+                        <strong>30 de setembro de 2025</strong>
+                        <span>Falecimento</span>
+                    </div>
+
+                    <div>
+                        <strong>Camisa 10</strong>
+                        <span>Posição</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     OUTRO GRANDE NOME — PINGO
+========================================================== -->
+
+<section class="hall-personagens">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                ÍDOLOS DO MAIO
+            </span>
+
+            <h2>
+                Grandes nomes da nossa história
+            </h2>
+
+        </div>
+
+
+        <div class="hall-card-destaque">
+
+            <div class="hall-card-imagem">
+
+                <img
+                    src="{% static 'img/pingo.jpg' %}"
+                    alt="Carlos A. Santos - Pingo"
+                >
+
+            </div>
+
+
+            <div class="hall-card-conteudo">
+
+                <span class="hall-label">
+                    CAMISA 10 • PRESIDENTE
+                </span>
+
+                <h2>
+                    Carlos Santos
+                </h2>
+
+                <h3>
+                    “Pingo”
+                </h3>
+
+                <p>
+                    Carlos Santos, conhecido como <strong>Pingo</strong>,
+                    também marcou sua trajetória como camisa 10 do
+                    Primeiro de Maio.
+                </p>
+
+                <p>
+                    Na década de 1980, teve passagem pelo
+                    <strong>Palmeiras</strong>, antes de continuar sua
+                    história ligada ao futebol e ao Primeiro de Maio.
+                </p>
+
+                <p>
+                    Atualmente é o <strong>presidente da A.D. Primeiro de Maio</strong>
+                    e continua defendendo as cores do clube dentro de campo,
+                    atuando pela equipe <strong>+60</strong>.
+                </p>
+
+                <p>
+                    O futebol continua fazendo parte de sua vida e o
+                    +60 do Maio segue conquistando títulos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     FUTUROS HOMENAGEADOS
+========================================================== -->
+
+<section class="pagina-conteudo">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>
+                MEMÓRIA E TRADIÇÃO
+            </span>
+
+            <h2>
+                Outros nomes que fizeram história
+            </h2>
+
+        </div>
+
+
+        {% if homenageados %}
+
+        <div class="hall-grid">
+
+            {% for homenageado in homenageados %}
+
+            <article class="hall-mini-card">
+
+                <h3>
+                    {{ homenageado.nome }}
+                </h3>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="hall-vazio">
+
+            <p>
+                O Hall da Fama continuará recebendo novos nomes
+                que ajudaram a construir a história do Primeiro de Maio.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     FRASE FINAL
+========================================================== -->
+
+<section class="hall-final">
+
+    <div class="container text-center">
+
+        <div class="hall-final-icone">
+            ⭐
+        </div>
+
+        <h2>
+            UMA HISTÓRIA FEITA POR GRANDES PERSONAGENS
+        </h2>
+
+        <p>
+            Jogadores, dirigentes, torcedores e todos aqueles que
+            dedicaram parte de suas vidas ao Primeiro de Maio
+            permanecem para sempre na memória do clube.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

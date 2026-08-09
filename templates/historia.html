@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Nossa História | A.D. Primeiro de Maio
+{% endblock %}
+
+{% block conteudo %}
+
+<section class="historia-banner">
+
+    <div class="banner-overlay">
+
+        <div class="container">
+
+            <h1>NOSSA HISTÓRIA</h1>
+
+            <p>
+                Desde 1947 escrevendo uma das mais belas histórias do esporte
+                barueriense.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="historia">
+
+    <div class="container">
+
+        <div class="historia-img">
+
+            <img src="{% static 'img/historia.png' %}" alt="Equipe Histórica">
+
+        </div>
+
+        <div class="historia-texto">
+
+            <h2>Fundação</h2>
+
+            <p>
+
+                A Associação Desportiva Primeiro de Maio nasceu em 1947 e,
+                desde então, tornou-se um dos maiores símbolos do futebol
+                amador de Barueri.
+
+            </p>
+
+            <p>
+
+                Ao longo das décadas, atletas, dirigentes, torcedores e
+                famílias ajudaram a construir uma história marcada por paixão,
+                dedicação e grandes conquistas.
+
+            </p>
+
+            <p>
+
+                O clube revelou jogadores, conquistou títulos e se tornou
+                referência para gerações de esportistas da cidade.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            LINHA DO TEMPO
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>1947</h3>
+
+                <p>Fundação da Associação Desportiva Primeiro de Maio.</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>1981</h3>
+
+                <p>Primeiro título municipal.</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Tricampeonato</h3>
+
+                <p>Período de grandes conquistas do clube.</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Hoje</h3>
+
+                <p>
+
+                    Preservando a memória e a tradição do Maião para as novas
+                    gerações.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="galeria">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            GALERIA HISTÓRICA
+
+        </h2>
+
+        <div class="grid-galeria">
+
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,172 @@
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+.navbar{
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:3px solid #a30000;
+
+    transition:.35s;
+
+    padding:10px 0;
+
+    z-index:9999;
+
+}
+
+.navbar.scrolled{
+
+    background:#050505;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+}
+
+/* ======================================================
+   BRAND
+====================================================== */
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#fff;
+
+}
+
+.navbar-brand:hover{
+
+    color:#fff;
+
+}
+
+.logo-navbar{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 10px rgba(212,0,0,.35));
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.titulo-clube{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    color:#fff;
+
+    line-height:1;
+
+}
+
+.subtitulo{
+
+    color:#d8d8d8;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    margin-top:4px;
+
+}
+
+/* ======================================================
+   MENU
+====================================================== */
+
+.navbar-nav{
+
+    gap:8px;
+
+}
+
+.nav-link{
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    padding:12px 18px !important;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-link:hover{
+
+    color:#fff;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    bottom:5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d40000;
+
+    transition:.35s;
+
+}
+
+.nav-link:hover::after{
+
+    width:calc(100% - 36px);
+
+}
+
+.nav-link.active{
+
+    color:#fff;
+
+}
+
+.nav-link.active::after{
+
+    width:calc(100% - 36px);
+
+}
+
+/* ======================================================
+   BOTÃO MENU MOBILE

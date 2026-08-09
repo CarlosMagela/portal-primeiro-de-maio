@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Conquistas | A.D. Primeiro de Maio
+{% endblock %}
+
+{% block conteudo %}
+
+<section class="historia-banner">
+
+    <div class="banner-overlay">
+
+        <div class="container text-center">
+
+            <h1>NOSSAS CONQUISTAS</h1>
+
+            <p>
+                Uma história construída com trabalho, dedicação e títulos que
+                marcaram o futebol amador de Barueri.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center mb-5">
+
+            <div class="col-lg-10">
+
+                <h2 class="section-title">
+                    TÍTULOS MUNICIPAIS
+                </h2>
+
+                <p class="lead">
+
+                    Desde sua fundação, o Primeiro de Maio conquistou títulos
+                    importantes e escreveu seu nome entre os maiores clubes do
+                    futebol amador de Barueri.
+
+                </p>
+
+            </div>
+
+        </div>
+
+       <div class="row g-4">
+
+    {% for conquista in conquistas %}
+
+    <div class="col-md-6 col-lg-3">
+
+        <div class="card h-100 shadow {% if conquista.destaque %}border-danger{% endif %}">
+
+            {% if conquista.imagem %}
+
+                <img src="{{ conquista.imagem.url }}" class="card-img-top" alt="{{ conquista.titulo }}">
+
+            {% else %}
+
+                <img src="{% static 'img/taca.jfif' %}" class="card-img-top" alt="Taça">
+
+            {% endif %}
+
+            <div class="card-body text-center">
+
+                <h3>🏆 {{ conquista.ano }}</h3>
+
+                <h5>{{ conquista.titulo }}</h5>
+
+                <h6 class="text-danger">
+
+                    {{ conquista.campeonato }}
+
+                </h6>
+
+                <p>
+
+                    {{ conquista.descricao|truncatewords:20 }}
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% empty %}
+
+    <div class="col-12 text-center">
+
+        <h3>Ainda não existem conquistas cadastradas.</h3>
+
+        <p>Cadastre as conquistas pelo painel administrativo.</p>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+</section>
+
+<section class="section bg-dark text-white">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+
+                <h1 class="display-4 text-danger">4</h1>
+
+                <h5>Títulos Municipais</h5>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h1 class="display-4 text-danger">{{ conquistas|length }}</h1>
+
+                <h5>Fundação</h5>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h1 class="display-4 text-danger">79</h1>
+
+                <h5>Anos de História</h5>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h1 class="display-4 text-danger">∞</h1>
+
+                <h5>Paixão pelo Futebol</h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container text-center">
+
+        <h2 class="section-title">
+
+            MAIS DO QUE TÍTULOS
+
+        </h2>
+
+        <p class="lead">
+
+            Cada conquista representa o esforço de atletas, dirigentes,
+            colaboradores e torcedores que ajudaram a construir a história da
+            Associação Desportiva Primeiro de Maio.
+
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

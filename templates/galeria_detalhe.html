@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+{{ galeria.titulo }} | A.D. Primeiro de Maio
+{% endblock %}
+
+{% block conteudo %}
+
+<section class="pagina-topo">
+
+    <div class="container">
+
+        <h1>{{ galeria.titulo }}</h1>
+
+        <p>{{ galeria.descricao }}</p>
+
+    </div>
+
+</section>
+
+<section class="pagina-conteudo">
+
+    <div class="container">
+
+        {% for foto in fotos %}
+
+            <div style="margin-bottom:30px;">
+
+                <img
+                    src="{{ foto.imagem.url }}"
+                    alt="{{ foto.titulo }}"
+                    style="width:100%; max-width:800px;"
+                >
+
+                {% if foto.legenda %}
+                    <p>{{ foto.legenda }}</p>
+                {% endif %}
+
+            </div>
+
+        {% empty %}
+
+            <h2>Nenhuma foto encontrada.</h2>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

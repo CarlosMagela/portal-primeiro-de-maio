@@ -1,0 +1,928 @@
+/* ======================================================
+   RESET
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ======================================================
+   VARIÁVEIS
+====================================================== */
+
+:root{
+
+    --preto:#050505;
+    --preto2:#111111;
+
+    --vermelho:#980000;
+    --vermelho-hover:#c30000;
+
+    --branco:#ffffff;
+
+    --cinza:#d9d9d9;
+
+    --dourado:#f4c542;
+
+}
+
+/* ======================================================
+   BODY
+====================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--preto);
+
+    color:var(--branco);
+
+    overflow-x:hidden;
+
+    padding-top:85px;
+
+}
+
+/* ======================================================
+   LINKS
+====================================================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* ======================================================
+   IMAGENS
+====================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ======================================================
+   TITULOS
+====================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    letter-spacing:2px;
+
+}
+
+/* ======================================================
+   CONTAINER
+====================================================== */
+
+.container{
+
+    max-width:1320px;
+
+}
+
+/* ======================================================
+   BOTÃO PADRÃO
+====================================================== */
+
+.btn-hero{
+
+    width:340px;
+
+    height:60px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:60px;
+
+    background:linear-gradient(
+        90deg,
+        #760000,
+        #b60000,
+        #d10000
+    );
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(180,0,0,.35);
+
+}
+
+.btn-hero:hover{
+
+    transform:translateY(-4px);
+
+    color:#fff;
+
+    background:linear-gradient(
+        90deg,
+        #980000,
+        #d10000
+    );
+
+    box-shadow:0 20px 40px rgba(180,0,0,.55);
+
+}
+
+/* ======================================================
+   SEÇÕES
+====================================================== */
+
+section{
+
+    position:relative;
+
+}
+
+.section{
+
+    padding:90px 0;
+
+}
+
+/* ======================================================
+   TEXTO
+====================================================== */
+
+p{
+
+    color:#d9d9d9;
+
+    line-height:1.8;
+
+}
+
+/* ======================================================
+   UTILIDADES
+====================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-100{
+
+    margin-top:100px;
+
+}
+
+.mb-100{
+
+    margin-bottom:100px;
+
+}
+
+/* ===========================================
+   PÁGINA HISTÓRIA
+=========================================== */
+
+.historia-banner{
+
+    position:relative;
+
+    height:60vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.70),
+            rgba(120,0,0,.35)
+        ),
+        url("../img/hero/equipe-historica.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.banner-overlay{
+
+    width:100%;
+
+}
+
+.historia-banner h1{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:90px;
+
+    color:#fff;
+
+    text-align:center;
+
+    letter-spacing:4px;
+
+    text-shadow:0 5px 25px rgba(0,0,0,.8);
+
+}
+
+.historia-banner p{
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:25px auto 0;
+
+}
+
+.historia{
+
+    background:#080808;
+
+    padding:100px 0;
+
+}
+
+.historia .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.historia-img img{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+.historia-texto h2{
+
+    font-size:58px;
+
+    margin-bottom:25px;
+
+}
+
+.historia-texto p{
+
+    line-height:1.9;
+
+    color:#d6d6d6;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================
+   PÁGINAS INTERNAS
+========================================== */
+
+.pagina-topo{
+
+    padding:150px 0 80px;
+
+    background:linear-gradient(rgba(0,0,0,.75),rgba(120,0,0,.40));
+
+    text-align:center;
+
+}
+
+.pagina-topo h1{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:72px;
+
+    color:#fff;
+
+    letter-spacing:4px;
+
+}
+
+.pagina-topo p{
+
+    color:#ddd;
+
+    font-size:20px;
+
+    margin-top:20px;
+
+}
+
+.pagina-conteudo{
+
+    padding:80px 0;
+
+    background:#080808;
+
+}
+
+.card-pagina{
+
+    background:#111;
+
+    border-left:5px solid #b30000;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    color:#ddd;
+
+    box-shadow:0 0 25px rgba(0,0,0,.35);
+
+}
+
+.card-pagina h2{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+/* ======================================================
+   HALL DA FAMA
+====================================================== */
+
+.hall-destaque{
+
+    padding:100px 0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(152,0,0,.22),
+            transparent 45%
+        ),
+        #080808;
+
+}
+
+.hall-destaque-grid{
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.hall-destaque-imagem{
+
+    position:relative;
+
+}
+
+.hall-destaque-imagem::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-12px;
+
+    border:2px solid rgba(152,0,0,.65);
+
+    border-radius:24px;
+
+    z-index:0;
+
+}
+
+.hall-destaque-imagem img{
+
+    position:relative;
+
+    z-index:1;
+
+    width:100%;
+
+    max-height:650px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.65),
+        0 0 35px rgba(152,0,0,.18);
+
+}
+
+.hall-destaque-texto{
+
+    padding:20px 0;
+
+}
+
+.hall-label{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    margin-bottom:18px;
+
+    border-radius:30px;
+
+    background:#980000;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.hall-destaque-texto h2{
+
+    font-size:72px;
+
+    line-height:.95;
+
+    margin:0;
+
+    color:#fff;
+
+}
+
+.hall-destaque-texto h3{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:28px;
+
+    font-weight:600;
+
+    color:var(--dourado);
+
+    margin:12px 0 20px;
+
+}
+
+.hall-linha{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--vermelho);
+
+    margin-bottom:28px;
+
+}
+
+.hall-chamada{
+
+    color:#fff;
+
+    font-size:21px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+.hall-destaque-texto p{
+
+    margin-bottom:18px;
+
+}
+
+.hall-dados{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.hall-dados div{
+
+    padding:18px 12px;
+
+    background:#111;
+
+    border-radius:12px;
+
+    border-top:3px solid var(--vermelho);
+
+    text-align:center;
+
+}
+
+.hall-dados strong{
+
+    display:block;
+
+    color:#fff;
+
+    font-size:15px;
+
+    margin-bottom:5px;
+
+}
+
+.hall-dados span{
+
+    color:#999;
+
+    font-size:12px;
+
+}
+
+
+/* ======================================================
+   ÍDOLOS
+====================================================== */
+
+.hall-personagens{
+
+    padding:100px 0;
+
+    background:#050505;
+
+}
+
+.section-title{
+
+    margin-bottom:50px;
+
+}
+
+.section-title span{
+
+    display:block;
+
+    color:var(--vermelho-hover);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:8px;
+
+}
+
+.section-title h2{
+
+    font-size:52px;
+
+    color:#fff;
+
+}
+
+.hall-card-destaque{
+
+    display:grid;
+
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:55px;
+
+    align-items:center;
+
+    background:#111;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+}
+
+.hall-card-imagem img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:15px;
+
+}
+
+.hall-card-conteudo{
+
+    padding:20px;
+
+}
+
+.hall-card-conteudo h2{
+
+    font-size:60px;
+
+    color:#fff;
+
+    margin:0;
+
+}
+
+.hall-card-conteudo h3{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--dourado);
+
+    font-size:25px;
+
+    margin:5px 0 25px;
+
+}
+
+.hall-card-conteudo p{
+
+    margin-bottom:18px;
+
+}
+
+
+/* ======================================================
+   OUTROS HOMENAGEADOS
+====================================================== */
+
+.hall-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.hall-mini-card{
+
+    background:#111;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border-left:4px solid var(--vermelho);
+
+    transition:.3s;
+
+}
+
+.hall-mini-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.hall-mini-card h3{
+
+    color:#fff;
+
+    margin:0;
+
+}
+
+.hall-vazio{
+
+    text-align:center;
+
+    background:#111;
+
+    border-radius:15px;
+
+    padding:40px;
+
+}
+
+.hall-vazio p{
+
+    margin:0;
+
+}
+
+
+/* ======================================================
+   FINAL DO HALL DA FAMA
+====================================================== */
+
+.hall-final{
+
+    padding:100px 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.85),
+            rgba(80,0,0,.65)
+        );
+
+}
+
+.hall-final-icone{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+.hall-final h2{
+
+    font-size:48px;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.hall-final p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+/* ======================================================
+   RESPONSIVIDADE — HALL DA FAMA
+====================================================== */
+
+@media (max-width:991px){
+
+    .hall-destaque-grid{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+    .hall-destaque-texto h2{
+
+        font-size:58px;
+
+    }
+
+    .hall-card-destaque{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+    .hall-card-imagem img{
+
+        height:auto;
+
+        max-height:600px;
+
+    }
+
+    .hall-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .hall-destaque{
+
+        padding:70px 0;
+
+    }
+
+    .hall-destaque-texto h2{
+
+        font-size:48px;
+
+    }
+
+    .hall-destaque-texto h3{
+
+        font-size:23px;
+
+    }
+
+    .hall-dados{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hall-personagens{
+
+        padding:70px 0;
+
+    }
+
+    .section-title h2{
+
+        font-size:40px;
+
+    }
+
+    .hall-card-destaque{
+
+        padding:18px;
+
+    }
+
+    .hall-card-conteudo{
+
+        padding:10px;
+
+    }
+
+    .hall-card-conteudo h2{
+
+        font-size:45px;
+
+    }
+
+    .hall-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hall-final{
+
+        padding:70px 0;
+
+    }
+
+    .hall-final h2{
+
+        font-size:36px;
+
+    }
+
+}

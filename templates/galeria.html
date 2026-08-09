@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+Galeria | A.D. Primeiro de Maio
+{% endblock %}
+
+{% block conteudo %}
+
+<section class="pagina-topo">
+
+    <div class="container">
+
+        <h1>GALERIA</h1>
+
+        <p>
+            Fotos, memórias e momentos inesquecíveis.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="galeria-pagina">
+
+    <div class="container">
+
+        <div class="galeria-intro">
+
+            <span>MEMÓRIA DO CLUBE</span>
+
+            <h2>NOSSO ACERVO</h2>
+
+            <p>
+                Um espaço para preservar momentos que fazem parte
+                da história da Associação Desportiva Primeiro de Maio.
+            </p>
+
+        </div>
+
+
+        {% if galerias %}
+
+        <div class="galeria-grid">
+
+            {% for galeria in galerias %}
+
+            <article class="galeria-card">
+
+                {% if galeria.capa %}
+
+                    <img
+                        src="{{ galeria.capa.url }}"
+                        alt="{{ galeria.titulo }}"
+                    >
+
+                {% else %}
+
+                    <div class="galeria-sem-imagem">
+                        📷
+                    </div>
+
+                {% endif %}
+
+
+                <div class="galeria-card-conteudo">
+
+                    <span class="galeria-data">
+                        GALERIA
+                    </span>
+
+                    <h3>
+                        {{ galeria.titulo }}
+                    </h3>
+
+                    {% if galeria.descricao %}
+
+                    <p>
+                        {{ galeria.descricao }}
+                    </p>
+
+                    {% endif %}
+
+                    <div class="galeria-card-rodape">
+
+                        <span>
+                            📸 {{ galeria.fotos.count }} fotos
+                        </span>
+
+                        <a href="{% url 'galeria_detalhe' galeria.slug %}">
+                            VER GALERIA
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+{% endblock %}
