@@ -1,152 +1,1069 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends "base.html" %}
 
-{% block titulo %}
-Nossa História | A.D. Primeiro de Maio
-{% endblock %}
+{% block title %}História do 1º de Maio de Barueri{% endblock %}
 
-{% block conteudo %}
+{% block content %}
 
-<section class="historia-banner">
+<style>
+    .historia-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        line-height: 1.8;
+        font-size: 17px;
+    }
 
-    <div class="banner-overlay">
+    .historia-container h1 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
 
-        <div class="container">
+    .historia-container .subtitulo {
+        text-align: center;
+        font-size: 21px;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
 
-            <h1>NOSSA HISTÓRIA</h1>
+    .historia-container h2 {
+        font-size: 28px;
+        margin-top: 45px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
 
-            <p>
-                Desde 1947 escrevendo uma das mais belas histórias do esporte
-                barueriense.
-            </p>
+    .historia-container h3 {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .historia-container p {
+        margin-bottom: 18px;
+    }
+
+    .historia-container strong {
+        font-weight: 700;
+    }
+
+    .historia-container em {
+        font-style: italic;
+    }
+
+    .titulo-principal {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .titulo-principal .cores {
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    .destaque {
+        margin: 30px 0;
+        padding: 25px;
+        border-left: 5px solid #222;
+        background: #f5f5f5;
+        font-size: 18px;
+    }
+
+    .citacao {
+        margin: 30px 0;
+        padding: 25px;
+        background: #fafafa;
+        border-left: 5px solid #555;
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .titulos {
+        text-align: center;
+        margin: 25px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .titulos p {
+        margin: 5px 0;
+    }
+
+    .frase-final {
+        text-align: center;
+        margin-top: 50px;
+        padding: 35px 20px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .assinatura {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .fontes {
+        margin-top: 60px;
+        padding-top: 30px;
+        border-top: 1px solid #ccc;
+        font-size: 15px;
+    }
+
+    .fontes h2 {
+        font-size: 23px;
+        margin-top: 0;
+    }
+
+    .fontes ul {
+        padding-left: 25px;
+    }
+
+    @media (max-width: 768px) {
+        .historia-container {
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .historia-container h1 {
+            font-size: 30px;
+        }
+
+        .historia-container h2 {
+            font-size: 24px;
+        }
+
+        .historia-container h3 {
+            font-size: 20px;
+        }
+
+        .historia-container .subtitulo {
+            font-size: 18px;
+        }
+    }
+</style>
+
+
+<div class="historia-container">
+
+    <div class="titulo-principal">
+
+        <div class="cores">
+            🟥⬛ A.D. 1º DE MAIO DE BARUERI
+        </div>
+
+        <h1>A História do 1º de Maio de Barueri</h1>
+
+        <div class="subtitulo">
+            Uma história que começou na Aldeia e atravessou gerações
+        </div>
+
+    </div>
+
+
+    <p>
+        Algumas histórias são encontradas em livros.
+    </p>
+
+    <p>
+        Outras estão registradas em documentos, jornais e atas.
+    </p>
+
+    <p>
+        Mas existem histórias que precisam ser contadas pelas pessoas que as viveram.
+    </p>
+
+    <p>
+        A história da <strong>Associação Desportiva 1º de Maio de Barueri</strong>
+        pertence às três formas de memória.
+    </p>
+
+    <p>
+        Está nos registros oficiais do município, nas fotografias antigas,
+        nos troféus e nos campeonatos conquistados. Mas está também na lembrança
+        de jogadores, dirigentes, famílias e moradores que fizeram do clube
+        uma parte inseparável da vida da <strong>Aldeia de Barueri</strong>.
+    </p>
+
+    <p>
+        Fundado em <strong>1947</strong>, o 1º de Maio está entre os clubes
+        mais antigos da história esportiva de Barueri.
+    </p>
+
+    <p>
+        Mas, para entender o que realmente significa o 1º de Maio,
+        é preciso voltar à Aldeia de muitas décadas atrás.
+    </p>
+
+
+    <h2>🌳 A Aldeia e o nascimento do 1º de Maio</h2>
+
+    <p>
+        Na década de 1940, a Aldeia de Barueri era muito diferente
+        da cidade que conhecemos hoje.
+    </p>
+
+    <p>
+        O futebol era simples.
+    </p>
+
+    <p>
+        Os campos não tinham a estrutura dos grandes estádios.
+    </p>
+
+    <p>
+        Os jogadores eram moradores, trabalhadores, amigos e apaixonados
+        por futebol.
+    </p>
+
+    <p>
+        E as partidas contra equipes de regiões vizinhas significavam muito
+        mais do que uma simples competição. Eram encontros entre comunidades.
+    </p>
+
+    <p>
+        Foi nesse ambiente que nasceu o <strong>1º de Maio</strong>.
+    </p>
+
+    <div class="destaque">
+        <strong>Um clube criado pela comunidade e para a comunidade.</strong>
+    </div>
+
+
+    <h2>👥 Os homens que ajudaram a fundar o clube</h2>
+
+    <p>
+        Entre os nomes ligados à fundação do 1º de Maio estão duas figuras
+        importantes da história da Aldeia:
+    </p>
+
+
+    <h3>Joaquim Soares, o "Quinzinho"</h3>
+
+    <p>
+        Joaquim Soares estabeleceu-se na Aldeia em <strong>1930</strong>
+        e ficou conhecido carinhosamente como <strong>Quinzinho</strong>.
+    </p>
+
+    <p>
+        Os registros municipais afirmam que ele foi um dos fundadores da
+        <strong>Associação Desportiva 1º de Maio</strong>, além de ter
+        participado ativamente da vida comunitária da região.
+    </p>
+
+    <p>
+        Décadas depois, seu nome continuaria presente na Aldeia.
+        Hoje existe uma instituição municipal de educação infantil que
+        leva o nome de <strong>Joaquim Soares</strong>.
+    </p>
+
+
+    <h3>João Batista Pazinato Junior</h3>
+
+    <p>
+        Outro nome diretamente ligado à fundação é
+        <strong>João Batista Pazinato Junior</strong>, nascido em 1923.
+    </p>
+
+    <p>
+        Líder comunitário e defensor da Aldeia, participou da implantação
+        da primeira escola mista municipal da região, fundou o Movimento
+        Comunitário e também foi fundador da
+        <strong>Associação Desportiva 1º de Maio</strong>.
+    </p>
+
+    <p>
+        Seu nome também permanece vivo na Aldeia, dando nome a uma escola
+        municipal.
+    </p>
+
+    <p>
+        A presença dessas duas famílias — <strong>Soares e Pazinato</strong> —
+        mostra que a história do 1º de Maio está profundamente ligada
+        à própria formação da comunidade.
+    </p>
+
+
+    <h2>⚽ Um clube que já fazia história nos primeiros anos</h2>
+
+    <p>
+        O 1º de Maio não demorou para se tornar parte importante da vida
+        esportiva local.
+    </p>
+
+    <p>
+        Um registro da Câmara Municipal de Barueri de <strong>1952</strong>,
+        apenas cinco anos depois da fundação, já demonstra a existência
+        institucional do clube e registra a concessão de auxílio à
+        Associação Desportiva 1º de Maio.
+    </p>
+
+    <p>
+        Era uma época em que o futebol dependia muito do esforço dos
+        próprios moradores.
+    </p>
+
+    <p>
+        Jogadores, dirigentes, familiares e torcedores ajudavam como podiam.
+    </p>
+
+    <p>
+        <strong>O clube crescia junto com a comunidade.</strong>
+    </p>
+
+
+    <h2>🏟️ A Praça de Esportes da Aldeia</h2>
+
+    <p>
+        Com o passar das décadas, o 1º de Maio consolidou sua presença
+        na Aldeia.
+    </p>
+
+    <p>
+        Documentos da Câmara Municipal mostram que, na década de 1980,
+        o clube possuía sua <strong>Praça de Esportes na Aldeia de Barueri</strong>.
+    </p>
+
+    <p>
+        E até para manter aquele espaço era preciso lutar.
+    </p>
+
+    <p>
+        Em 1984, por exemplo, existe um registro oficial de uma indicação
+        para que a Prefeitura estudasse a compra da área pertencente ao
+        <strong>Ministério do Exército</strong>, onde estava localizada
+        a Praça de Esportes da A.D. 1º de Maio.
+    </p>
+
+
+    <h2>👔 Tarzan: futebol, comunidade e política</h2>
+
+    <p>
+        <strong>Antonio Carlos dos Santos, conhecido como Tarzan</strong>,
+        foi uma figura importante na história de Barueri.
+    </p>
+
+    <p>
+        Além de sua ligação com o 1º de Maio, exerceu mandato como
+        <strong>vereador de Barueri</strong> e participou ativamente
+        da vida pública do município.
+    </p>
+
+    <p>
+        A memória do clube também guarda Tarzan como um de seus presidentes.
+    </p>
+
+    <p>
+        E a história continuaria dentro da própria família.
+    </p>
+
+    <p>
+        O atual presidente do 1º de Maio,
+        <strong>Carlos A. Santos</strong>, é filho de Tarzan.
+    </p>
+
+    <p>
+        Assim, uma parte da história do clube passou de uma geração
+        para outra.
+    </p>
+
+
+    <h2>🏆 A geração que colocou o 1º de Maio no topo</h2>
+
+    <p>
+        Foi no início dos anos 1980 que o 1º de Maio viveu uma das
+        épocas mais importantes de sua história.
+    </p>
+
+    <p>
+        O Campeonato Municipal de Barueri havia começado a ser organizado
+        pela Prefeitura em <strong>1979</strong>.
+    </p>
+
+    <p>
+        E o 1º de Maio rapidamente mostrou sua força.
+    </p>
+
+    <p>
+        Em 1980, documentos da Câmara já registravam a equipe como
+        campeã do primeiro turno do <strong>II CAFAB</strong>.
+    </p>
+
+    <p>
+        Pouco depois vieram os grandes títulos.
+    </p>
+
+
+    <div class="titulos">
+
+        <p>🏆 <strong>1981 — Campeão Municipal</strong></p>
+
+        <p>🏆 <strong>1983 — Campeão Municipal</strong></p>
+
+        <p>🏆 <strong>1984 — Campeão Municipal</strong></p>
+
+    </div>
+
+
+    <p>
+        A Prefeitura confirma oficialmente os títulos municipais de
+        <strong>1981, 1983 e 1984</strong>.
+    </p>
+
+    <p>
+        Em junho de 1984, a Câmara Municipal registrou ainda uma homenagem
+        à Associação Desportiva 1º de Maio pela conquista do título de
+        campeã do primeiro turno do <strong>VI CAFAB</strong>.
+    </p>
+
+    <p>
+        Era uma geração vencedora.
+    </p>
+
+
+    <h2>👨‍👦 José Geraldo Magela — "Tilico"</h2>
+
+    <p>
+        Entre as pessoas que viveram intensamente aquele período estava
+        <strong>José Geraldo Magela</strong>, conhecido como
+        <strong>Tilico</strong>.
+    </p>
+
+    <p>
+        Jogador do 1º de Maio e posteriormente diretor do clube,
+        Tilico participou diretamente daquela geração que conquistou
+        os títulos de <strong>1981, 1983 e 1984</strong>.
+    </p>
+
+    <p>
+        Até <strong>1985</strong>, permaneceu ligado à direção do clube.
+    </p>
+
+    <p>
+        Mas a relação da família Magela com o 1º de Maio ia muito além
+        de jogar futebol ou ocupar uma função administrativa.
+    </p>
+
+    <p>
+        <strong>O clube fazia parte da própria casa.</strong>
+    </p>
+
+
+    <h2>🏠 Quando a casa virava depósito do 1º de Maio</h2>
+
+    <p>
+        Durante aquele período, a casa da família Magela servia como
+        <strong>depósito das bolas e dos uniformes do 1º de Maio</strong>.
+    </p>
+
+    <p>
+        Os materiais do clube ficavam ali.
+    </p>
+
+    <p>
+        As bolas ficavam ali.
+    </p>
+
+    <p>
+        As camisas ficavam ali.
+    </p>
+
+    <p>
+        E, para uma criança que crescia naquele ambiente, aquilo era
+        completamente natural.
+    </p>
+
+    <p>
+        O futebol fazia parte da rotina da família.
+    </p>
+
+    <p>
+        As bolas do 1º de Maio estavam dentro de casa.
+    </p>
+
+
+    <h2>🧺 Os uniformes lavados à mão</h2>
+
+    <p>
+        Naquela época, a realidade era muito diferente da atual.
+    </p>
+
+    <p>
+        Máquina de lavar não fazia parte da vida da maioria das famílias.
+    </p>
+
+    <p>
+        Os uniformes precisavam ser lavados à mão.
+    </p>
+
+    <p>
+        E quem assumia essa tarefa na família era a
+        <strong>avó materna</strong>.
+    </p>
+
+    <p>
+        Depois dos jogos, as camisas que representavam o 1º de Maio
+        passavam pelas mãos de uma mulher que, provavelmente, jamais
+        imaginaria que aquele trabalho simples faria parte da memória
+        histórica do clube décadas depois.
+    </p>
+
+    <p>
+        Ela lavava os uniformes.
+    </p>
+
+    <p>
+        A casa guardava as bolas.
+    </p>
+
+    <p>
+        O pai jogava e dirigia.
+    </p>
+
+    <p>
+        E a família inteira, de uma maneira ou outra, ajudava o
+        1º de Maio a continuar em campo.
+    </p>
+
+    <div class="destaque">
+        <strong>
+            Essa é uma parte da história que não aparece em uma ata da Câmara.
+            Mas é justamente esse tipo de memória que ajuda a explicar
+            o que era o futebol de várzea.
+        </strong>
+    </div>
+
+
+    <h2>🧑‍🏫 Jairo Barbosa dos Santos</h2>
+
+    <p>
+        Outro personagem importante daquela geração foi
+        <strong>Jairo Barbosa dos Santos</strong>.
+    </p>
+
+    <p>
+        Jairo foi técnico do 1º de Maio durante o período dos grandes
+        títulos do início dos anos 1980.
+    </p>
+
+    <p>
+        Sua participação não se limitava ao trabalho dentro de campo.
+    </p>
+
+    <p>
+        Segundo a memória de pessoas ligadas àquele período, Jairo também
+        teve participação importante na <strong>criação e organização
+        do Campeonato de Barueri</strong>, contribuindo para o desenvolvimento
+        da competição que posteriormente se tornaria uma das maiores
+        referências do futebol amador da região.
+    </p>
+
+    <p>
+        É uma informação que merece ser aprofundada em documentos e
+        depoimentos de antigos dirigentes, mas que faz parte da memória
+        daqueles que viveram aquele momento.
+    </p>
+
+
+    <h2>🟥⬛ Uma geração de homens que fez o clube acontecer</h2>
+
+    <p>
+        Quando se fala em futebol profissional, normalmente lembramos
+        dos jogadores.
+    </p>
+
+    <p>
+        No futebol de várzea é diferente.
+    </p>
+
+    <p>
+        É preciso lembrar também de quem:
+    </p>
+
+    <ul>
+        <li>lavava os uniformes;</li>
+        <li>guardava as bolas;</li>
+        <li>organizava os jogos;</li>
+        <li>buscava jogadores;</li>
+        <li>cuidava do campo;</li>
+        <li>pagava despesas;</li>
+        <li>dirigia o clube;</li>
+        <li>treinava a equipe;</li>
+        <li>transportava os atletas;</li>
+        <li>ajudava nos vestiários;</li>
+        <li>e muitas vezes colocava dinheiro do próprio bolso para o time entrar em campo.</li>
+    </ul>
+
+    <p>
+        <strong>O 1º de Maio foi construído por essas pessoas.</strong>
+    </p>
+
+
+    <h2>📸 As fotografias que sobraram</h2>
+
+    <p>
+        Por isso, uma fotografia antiga do 1º de Maio tem um significado
+        muito maior do que simplesmente mostrar um time.
+    </p>
+
+    <p>
+        Ela registra pessoas.
+    </p>
+
+    <p>
+        Registra uma época.
+    </p>
+
+    <p>
+        Registra os uniformes.
+    </p>
+
+    <p>
+        Registra os campos.
+    </p>
+
+    <p>
+        Registra os amigos.
+    </p>
+
+    <p>
+        E registra uma maneira de viver o futebol que praticamente
+        desapareceu.
+    </p>
+
+    <div class="citacao">
+        <strong>
+            Uma fotografia antiga não registra apenas jogadores.
+            Registra uma geração.
+        </strong>
+    </div>
+
+
+    <h2>⏳ Depois dos títulos, a história continuou</h2>
+
+    <p>
+        Depois do título de <strong>1984</strong>, o 1º de Maio passou
+        por um longo período sem conquistar novamente o principal
+        campeonato municipal.
+    </p>
+
+    <p>
+        Foram quase quatro décadas.
+    </p>
+
+    <p>
+        Mas isso não significa que o clube tenha deixado de existir.
+    </p>
+
+    <p>
+        Muito pelo contrário.
+    </p>
+
+    <p>
+        O 1º de Maio continuou sendo mantido por gerações de jogadores,
+        dirigentes, famílias e torcedores.
+    </p>
+
+    <p>
+        Presidentes passaram.
+    </p>
+
+    <p>
+        Jogadores passaram.
+    </p>
+
+    <p>
+        Técnicos passaram.
+    </p>
+
+    <p>
+        <strong>Mas o clube permaneceu.</strong>
+    </p>
+
+
+    <h3>Presidentes lembrados na história do clube</h3>
+
+    <ul>
+        <li><strong>Sr. Nelo</strong></li>
+        <li><strong>Antonio Carlos dos Santos — "Tarzan"</strong></li>
+        <li><strong>Sr. José Sales</strong></li>
+        <li><strong>Carlos A. Santos — atual presidente</strong></li>
+    </ul>
+
+    <p>
+        A continuidade da presidência dentro da família Santos é mais
+        um exemplo de como a história do 1º de Maio atravessa gerações.
+    </p>
+
+
+    <h2>🏆 2023 — O dia em que a história voltou ao topo</h2>
+
+    <p>
+        Em 2023, o 1º de Maio completou <strong>76 anos</strong>.
+    </p>
+
+    <p>
+        E depois de quase 40 anos de espera, voltou a disputar a final
+        da principal categoria do Campeonato Amador de Barueri.
+    </p>
+
+    <p>
+        O adversário era o Seringueira.
+    </p>
+
+    <p>
+        A decisão aconteceu na <strong>Arena Barueri</strong>,
+        em 1º de outubro de 2023.
+    </p>
+
+    <p>
+        O Seringueira saiu na frente.
+    </p>
+
+    <p>
+        Mas o 1º de Maio reagiu.
+    </p>
+
+    <p>
+        Com gols de <strong>Vitinho</strong> e
+        <strong>Nego do Embu</strong>, o time virou a partida.
+    </p>
+
+    <div class="destaque">
+
+        <div class="titulos">
+
+            <p><strong>Seringueira 1 × 2 1º de Maio</strong></p>
+
+            <p>🏆 1º de Maio — Campeão Municipal</p>
 
         </div>
 
     </div>
 
-</section>
+    <p>
+        E naquele momento uma geração inteira pôde comemorar novamente.
+    </p>
 
-<section class="historia">
+    <p>
+        O 1º de Maio era campeão municipal.
+    </p>
 
-    <div class="container">
 
-        <div class="historia-img">
+    <div class="titulos">
 
-            <img src="{% static 'img/historia.png' %}" alt="Equipe Histórica">
+        <p>🏆 1981</p>
+        <p>🏆 1983</p>
+        <p>🏆 1984</p>
+        <p>🏆 2023</p>
 
-        </div>
-
-        <div class="historia-texto">
-
-            <h2>Fundação</h2>
-
-            <p>
-
-                A Associação Desportiva Primeiro de Maio nasceu em 1947 e,
-                desde então, tornou-se um dos maiores símbolos do futebol
-                amador de Barueri.
-
-            </p>
-
-            <p>
-
-                Ao longo das décadas, atletas, dirigentes, torcedores e
-                famílias ajudaram a construir uma história marcada por paixão,
-                dedicação e grandes conquistas.
-
-            </p>
-
-            <p>
-
-                O clube revelou jogadores, conquistou títulos e se tornou
-                referência para gerações de esportistas da cidade.
-
-            </p>
-
-        </div>
+        <p>
+            <strong>TETRACAMPEÃO DE BARUERI</strong>
+        </p>
 
     </div>
 
-</section>
 
-<section class="section">
+    <h2>🏆 2023: um ano para entrar na história</h2>
 
-    <div class="container">
+    <p>
+        O tetracampeonato não foi a única conquista daquele período.
+    </p>
 
-        <h2 class="section-title">
+    <p>
+        Em 2023, o 1º de Maio também conquistou a
+        <strong>Supercopa Barueri</strong> na categoria principal.
+    </p>
 
-            LINHA DO TEMPO
+    <p>
+        E nas categorias de veteranos, continuou mostrando sua força.
+    </p>
 
-        </h2>
+    <p>
+        No <strong>Extra-Master</strong>, o clube conquistou o bicampeonato,
+        vencendo o Simões Neto nos pênaltis.
+    </p>
 
-        <div class="timeline">
 
-            <div class="timeline-item">
+    <h2>🏆 2025 e 2026 — Uma história que não parou</h2>
 
-                <h3>1947</h3>
+    <p>
+        A tradição continuou.
+    </p>
 
-                <p>Fundação da Associação Desportiva Primeiro de Maio.</p>
+    <p>
+        O 1º de Maio permaneceu disputando as competições municipais
+        e mantendo sua presença também entre os veteranos.
+    </p>
 
-            </div>
+    <p>
+        E em <strong>2026</strong>, voltou a levantar troféus importantes.
+    </p>
 
-            <div class="timeline-item">
+    <p>
+        O clube continuou escrevendo novos capítulos da mesma história
+        iniciada em 1947.
+    </p>
 
-                <h3>1981</h3>
+    <p>
+        O 1º de Maio continuou reunindo jogadores.
+    </p>
 
-                <p>Primeiro título municipal.</p>
+    <p>
+        Continuou reunindo famílias.
+    </p>
 
-            </div>
+    <p>
+        Continuou levando o nome do 1º de Maio para dentro dos campos
+        de Barueri.
+    </p>
 
-            <div class="timeline-item">
 
-                <h3>Tricampeonato</h3>
+    <h2>❤️ Mais do que um time</h2>
 
-                <p>Período de grandes conquistas do clube.</p>
+    <p>
+        Depois de quase oito décadas, talvez seja impossível contar
+        toda a história do 1º de Maio através de títulos.
+    </p>
 
-            </div>
+    <p>
+        Porque o clube nunca foi somente isso.
+    </p>
 
-            <div class="timeline-item">
+    <p>
+        Sua história está também nas famílias.
+    </p>
 
-                <h3>Hoje</h3>
+    <p>
+        Está nos fundadores <strong>Joaquim Soares</strong> e
+        <strong>João Batista Pazinato Junior</strong>.
+    </p>
 
-                <p>
+    <p>
+        Está nos dirigentes.
+    </p>
 
-                    Preservando a memória e a tradição do Maião para as novas
-                    gerações.
+    <p>
+        Está em <strong>Tarzan</strong>.
+    </p>
 
-                </p>
+    <p>
+        Está em <strong>Sr. Nelo</strong>.
+    </p>
 
-            </div>
+    <p>
+        Está em <strong>Sr. José Sales</strong>.
+    </p>
 
-        </div>
+    <p>
+        Está no atual presidente <strong>Carlos A. Santos</strong>.
+    </p>
+
+    <p>
+        Está nos jogadores.
+    </p>
+
+    <p>
+        Está nos técnicos, como <strong>Jairo Barbosa dos Santos</strong>.
+    </p>
+
+    <p>
+        Está nos antigos torcedores.
+    </p>
+
+    <p>
+        Está em pessoas como <strong>José Geraldo Magela, o Tilico</strong>,
+        que vestiu a camisa, ajudou a dirigir o clube e fez parte da
+        geração campeã.
+    </p>
+
+    <p>
+        Está na mulher que lavava os uniformes.
+    </p>
+
+    <p>
+        Está na casa que guardava as bolas.
+    </p>
+
+    <p>
+        Está nas crianças que cresceram brincando com elas.
+    </p>
+
+    <p>
+        Está nas fotografias antigas.
+    </p>
+
+    <p>
+        Está nas histórias contadas pelos mais velhos.
+    </p>
+
+    <p>
+        <strong>E está na Aldeia.</strong>
+    </p>
+
+
+    <h2>🟥⬛ Uma história que passa de pai para filho</h2>
+
+    <p>
+        Talvez essa seja a melhor maneira de explicar o 1º de Maio.
+    </p>
+
+    <p>
+        Um clube que passa de geração para geração.
+    </p>
+
+    <p>
+        Os homens que fundaram o clube em 1947 deixaram uma história.
+    </p>
+
+    <p>
+        Seus filhos e netos continuaram essa história.
+    </p>
+
+    <p>
+        Décadas depois, jogadores como <strong>Tilico</strong> e técnicos
+        como <strong>Jairo</strong> ajudaram a construir uma das gerações
+        mais vitoriosas do clube.
+    </p>
+
+    <p>
+        E hoje seus filhos, netos e novas gerações continuam carregando
+        essa memória.
+    </p>
+
+    <div class="destaque">
+        <strong>
+            É assim que uma agremiação deixa de ser apenas uma equipe.
+            Ela se transforma em patrimônio afetivo de uma comunidade.
+        </strong>
+    </div>
+
+
+    <h2>🏟️ 1947 — PRESENTE</h2>
+
+    <p>
+        O 1º de Maio nasceu em uma época em que Barueri ainda era uma
+        cidade muito diferente.
+    </p>
+
+    <p>
+        Sobreviveu às mudanças.
+    </p>
+
+    <p>
+        Passou por campos simples.
+    </p>
+
+    <p>
+        Viu gerações nascerem.
+    </p>
+
+    <p>
+        Perdeu jogadores e dirigentes queridos.
+    </p>
+
+    <p>
+        Comemorou vitórias.
+    </p>
+
+    <p>
+        Enfrentou derrotas.
+    </p>
+
+    <p>
+        Passou quase 40 anos esperando novamente pelo título principal.
+    </p>
+
+    <p>
+        E quando voltou a conquistar o campeonato, em 2023, mostrou
+        que algumas histórias simplesmente não terminam.
+    </p>
+
+    <p>
+        <strong>Elas continuam.</strong>
+    </p>
+
+
+    <div class="frase-final">
+
+        <p>
+            Porque enquanto existir alguém disposto a vestir a camisa...
+        </p>
+
+        <p>
+            Enquanto existir alguém disposto a torcer...
+        </p>
+
+        <p>
+            Enquanto existir alguém disposto a guardar uma fotografia...
+        </p>
+
+        <p>
+            Enquanto existir alguém disposto a contar para os mais jovens
+            quem foram aqueles que vieram antes...
+        </p>
+
+        <p>
+            <strong>
+                O 1º de Maio continuará vivo.
+            </strong>
+        </p>
 
     </div>
 
-</section>
 
-<section class="galeria">
+    <div class="assinatura">
 
-    <div class="container">
+        <p>🟥⬛ A.D. 1º DE MAIO DE BARUERI</p>
 
-        <h2 class="section-title">
+        <p>1947 — presente</p>
 
-            GALERIA HISTÓRICA
-
-        </h2>
-
-        <div class="grid-galeria">
-
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-            <img src="{% static 'img/hero/equipe-historica.jpg' %}" alt="">
-
-        </div>
+        <p>
+            Uma camisa.<br>
+            Uma comunidade.<br>
+            Muitas gerações.<br>
+            Uma história que continua sendo escrita.
+        </p>
 
     </div>
 
-</section>
+
+    <div class="fontes">
+
+        <h2>📚 Fontes e memória histórica</h2>
+
+        <p>
+            Esta narrativa reúne registros oficiais do Município e da
+            Câmara Municipal de Barueri, além de memórias pessoais e
+            familiares de pessoas diretamente ligadas ao 1º de Maio.
+        </p>
+
+        <ul>
+            <li>Prefeitura Municipal de Barueri — História do Campeonato Amador.</li>
+            <li>Câmara Municipal de Barueri — registros históricos do 1º de Maio.</li>
+            <li>Registros municipais sobre Joaquim Soares.</li>
+            <li>Registros municipais sobre João Batista Pazinato Junior.</li>
+            <li>Memórias de famílias e pessoas ligadas à história do clube.</li>
+            <li>Acervo fotográfico e histórico do 1º de Maio.</li>
+        </ul>
+
+        <p>
+            <em>
+                As informações referentes às memórias familiares, jogadores,
+                dirigentes e acontecimentos vividos dentro do clube poderão
+                ser complementadas posteriormente com documentos, fotografias
+                e depoimentos de antigos jogadores, dirigentes e torcedores.
+            </em>
+        </p>
+
+    </div>
+
+</div>
 
 {% endblock %}
